@@ -1,0 +1,69 @@
+{
+  "name": "@faasjs/flow-tencentcloud",
+  "version": "0.0.0-alpha.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts --fix src",
+    "build": "rm -rf ./lib && tsc",
+    "test": "jest --expand",
+    "doc": "jsdoc2md --files ./lib/*.js > ./API.md",
+    "ci": "yarn lint && yarn test",
+    "commit": "yarn ci && yarn build && yarn doc"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@faasjs/flow": "0.0.0-alpha.7",
+    "@faasjs/trigger-http": "0.0.0-alpha.1",
+    "@faasjs/provider-tencentcloud": "0.0.0-alpha.0"
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-typescript": "*",
+    "@types/debug": "*",
+    "@types/jest": "*",
+    "@types/node": "*",
+    "babel-jest": "*",
+    "jest": "*",
+    "jsdoc-babel": "*",
+    "jsdoc-to-markdown": "*",
+    "@faasjs/eslint-config-recommended": "0.0.0-alpha.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "8"
+          }
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@faasjs/recommended"
+    ]
+  },
+  "eslintIgnore": [
+    "**/*.js"
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "testRegex": "/*\\.test\\.ts$",
+    "testPathIgnorePatterns": [
+      "/lib/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/lib/",
+      "/tmp/",
+      "/__tests__/"
+    ]
+  }
+}
