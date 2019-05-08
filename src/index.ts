@@ -14,7 +14,7 @@ class FlowTencentcloud extends Flow {
     return TencentCloud.Scf.action(this.logger, this.config.resource!.provider!.config, {
       Action: 'Invoke',
       ClientContext: JSON.stringify(data),
-      FunctionName: `${this.config.name}_invoke_${index + 1}`,
+      FunctionName: `${this.config.name}_invoke_${index}`,
       InvocationType: 'Event'
     });
   }
