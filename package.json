@@ -1,6 +1,6 @@
 {
   "name": "@faasjs/flow-tencentcloud",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-alpha.1",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,22 +16,22 @@
     "lib"
   ],
   "dependencies": {
-    "@faasjs/flow": "0.0.0-alpha.7",
-    "@faasjs/trigger-http": "0.0.0-alpha.1",
-    "@faasjs/provider-tencentcloud": "0.0.0-alpha.0"
+    "@faasjs/flow": "0.0.0-alpha.8",
+    "@faasjs/provider-tencentcloud": "0.0.0-alpha.0",
+    "@faasjs/trigger-http": "0.0.0-alpha.1"
   },
   "devDependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "@babel/preset-typescript": "*",
+    "@faasjs/eslint-config-recommended": "0.0.0-alpha.1",
     "@types/debug": "*",
     "@types/jest": "*",
     "@types/node": "*",
     "babel-jest": "*",
     "jest": "*",
     "jsdoc-babel": "*",
-    "jsdoc-to-markdown": "*",
-    "@faasjs/eslint-config-recommended": "0.0.0-alpha.0"
+    "jsdoc-to-markdown": "*"
   },
   "babel": {
     "presets": [

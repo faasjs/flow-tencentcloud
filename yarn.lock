@@ -649,20 +649,28 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@faasjs/eslint-config-recommended@0.0.0-alpha.0":
-  version "0.0.0-alpha.0"
-  resolved "https://registry.npm.taobao.org/@faasjs/eslint-config-recommended/download/@faasjs/eslint-config-recommended-0.0.0-alpha.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40faasjs%2Feslint-config-recommended%2Fdownload%2F%40faasjs%2Feslint-config-recommended-0.0.0-alpha.0.tgz#675a5a580c51d5d45210783a1980e9ea197145f3"
-  integrity sha1-Z1paWAxR1dRSEHg6GYDp6hlxRfM=
+"@faasjs/eslint-config-recommended@0.0.0-alpha.1":
+  version "0.0.0-alpha.1"
+  resolved "https://registry.npm.taobao.org/@faasjs/eslint-config-recommended/download/@faasjs/eslint-config-recommended-0.0.0-alpha.1.tgz#3888e4e50e1eac30e9ee500e37f52bfceb5916c0"
+  integrity sha1-OIjk5Q4erDDp7lAON/Ur/OtZFsA=
   dependencies:
     "@typescript-eslint/eslint-plugin" "*"
     "@typescript-eslint/parser" "*"
     eslint "*"
+    eslint-plugin-security "*"
     typescript "*"
 
 "@faasjs/flow@0.0.0-alpha.7":
   version "0.0.0-alpha.7"
   resolved "https://registry.npm.taobao.org/@faasjs/flow/download/@faasjs/flow-0.0.0-alpha.7.tgz#36116e9b0103d0db9ebe4b3fcdfa9f7df95acb61"
   integrity sha1-NhFumwED0Nuevks/zfqffflay2E=
+  dependencies:
+    "@faasjs/utils" "0.0.0-alpha.2"
+
+"@faasjs/flow@0.0.0-alpha.8":
+  version "0.0.0-alpha.8"
+  resolved "https://registry.npm.taobao.org/@faasjs/flow/download/@faasjs/flow-0.0.0-alpha.8.tgz#8ac148b0aa8eb46565a610e2995834585f80f311"
+  integrity sha1-isFIsKqOtGVlphDimVg0WF+A8xE=
   dependencies:
     "@faasjs/utils" "0.0.0-alpha.2"
 
@@ -691,7 +699,7 @@
 
 "@faasjs/trigger-http@0.0.0-alpha.1":
   version "0.0.0-alpha.1"
-  resolved "https://registry.npm.taobao.org/@faasjs/trigger-http/download/@faasjs/trigger-http-0.0.0-alpha.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40faasjs%2Ftrigger-http%2Fdownload%2F%40faasjs%2Ftrigger-http-0.0.0-alpha.1.tgz#847f07cd8634507c9293749b8d16cc39dd9358cf"
+  resolved "https://registry.npm.taobao.org/@faasjs/trigger-http/download/@faasjs/trigger-http-0.0.0-alpha.1.tgz#847f07cd8634507c9293749b8d16cc39dd9358cf"
   integrity sha1-hH8HzYY0UHySk3SbjRbMOd2TWM8=
   dependencies:
     "@faasjs/flow" "0.0.0-alpha.7"
@@ -1327,9 +1335,9 @@ camelcase@^5.0.0:
   integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
 
 caniuse-lite@^1.0.30000963:
-  version "1.0.30000966"
-  resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000966.tgz#f3c6fefacfbfbfb981df6dfa68f2aae7bff41b64"
-  integrity sha1-88b++s+/v7mB3236aPKq57/0G2Q=
+  version "1.0.30000967"
+  resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000967.tgz#a5039577806fccee80a04aaafb2c0890b1ee2f73"
+  integrity sha1-pQOVd4BvzO6AoEqq+ywIkLHuL3M=
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -1483,7 +1491,7 @@ command-line-usage@^4.1.0:
 
 commander@~2.20.0:
   version "2.20.0"
-  resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha1-1YuytcHuj4ew00ACfp6U4iLFpCI=
 
 common-sequence@^1.0.2:
@@ -1812,6 +1820,13 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-plugin-security@*:
+  version "1.4.0"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-security/download/eslint-plugin-security-1.4.0.tgz#d4f314484a80b1b613b8c8886e84f52efe1526c2"
+  integrity sha1-1PMUSEqAsbYTuMiIboT1Lv4VJsI=
+  dependencies:
+    safe-regex "^1.1.0"
+
 eslint-scope@^4.0.0, eslint-scope@^4.0.3:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/eslint-scope/download/eslint-scope-4.0.3.tgz#ca03833310f6889a3264781aa82e63eb9cfe7848"
@@ -1907,7 +1922,7 @@ esrecurse@^4.1.0:
 
 estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
-  resolved "https://registry.npm.taobao.org/estraverse/download/estraverse-4.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Festraverse%2Fdownload%2Festraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
+  resolved "https://registry.npm.taobao.org/estraverse/download/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
 esutils@^2.0.2:
@@ -2198,9 +2213,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 glob@^7.1.1, glob@^7.1.2, glob@^7.1.3:
-  version "7.1.3"
-  resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
-  integrity sha1-OWCDLT8VdBCDQtr9OmezMsCWnfE=
+  version "7.1.4"
+  resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
+  integrity sha1-qmCKL2xXetNX4a5aXCbZqNGWklU=
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -3560,9 +3575,9 @@ node-pre-gyp@^0.12.0:
     tar "^4"
 
 node-releases@^1.1.17:
-  version "1.1.17"
-  resolved "https://registry.npm.taobao.org/node-releases/download/node-releases-1.1.17.tgz#71ea4631f0a97d5cd4f65f7d04ecf9072eac711a"
-  integrity sha1-cepGMfCpfVzU9l99BOz5By6scRo=
+  version "1.1.18"
+  resolved "https://registry.npm.taobao.org/node-releases/download/node-releases-1.1.18.tgz#cc98fd75598a324a77188ebddf6650e9cbd8b1d5"
+  integrity sha1-zJj9dVmKMkp3GI6932ZQ6cvYsdU=
   dependencies:
     semver "^5.3.0"
 
@@ -4294,7 +4309,7 @@ sax@>=0.6.0, sax@^1.2.4:
 
 semver@5.5.0:
   version "5.5.0"
-  resolved "https://registry.npm.taobao.org/semver/download/semver-5.5.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
+  resolved "https://registry.npm.taobao.org/semver/download/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
   integrity sha1-3Eu8emyp2Rbe5dQ1FvAJK1j3uKs=
 
 semver@^6.0.0:
@@ -4830,9 +4845,9 @@ typical@^4.0.0:
   integrity sha1-y+r/O5164eK7+vWk5vEezP3pT8Q=
 
 uglify-js@^3.1.4:
-  version "3.5.10"
-  resolved "https://registry.npm.taobao.org/uglify-js/download/uglify-js-3.5.10.tgz#652bef39f86d9dbfd6674407ee05a5e2d372cf2d"
-  integrity sha1-ZSvvOfhtnb/WZ0QH7gWl4tNyzy0=
+  version "3.5.11"
+  resolved "https://registry.npm.taobao.org/uglify-js/download/uglify-js-3.5.11.tgz#833442c0aa29b3a7d34344c7c63adaa3f3504f6a"
+  integrity sha1-gzRCwKops6fTQ0THxjrao/NQT2o=
   dependencies:
     commander "~2.20.0"
     source-map "~0.6.1"
