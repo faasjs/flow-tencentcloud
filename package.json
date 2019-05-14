@@ -9,7 +9,7 @@
     "lint": "eslint --ext .ts --fix src",
     "build": "rm -rf ./lib && rollup -c",
     "test": "jest --expand",
-    "doc": "jsdoc2md --files ./lib/*.js > ./API.md",
+    "doc": "jsdoc2md --files ./lib/index.js > ./API.md",
     "ci": "yarn lint && yarn test",
     "commit": "yarn ci && yarn build && yarn doc"
   },
