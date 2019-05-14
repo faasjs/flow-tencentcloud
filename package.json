@@ -4,9 +4,10 @@
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "module": "lib/index.es.js",
   "scripts": {
     "lint": "eslint --ext .ts --fix src",
-    "build": "rm -rf ./lib && tsc",
+    "build": "rm -rf ./lib && rollup -c",
     "test": "jest --expand",
     "doc": "jsdoc2md --files ./lib/*.js > ./API.md",
     "ci": "yarn lint && yarn test",
@@ -16,9 +17,9 @@
     "lib"
   ],
   "dependencies": {
-    "@faasjs/flow": "0.0.0-alpha.8",
-    "@faasjs/provider-tencentcloud": "0.0.0-alpha.0",
-    "@faasjs/trigger-http": "0.0.0-alpha.1"
+    "@faasjs/flow": "0.0.0-alpha.13",
+    "@faasjs/provider-tencentcloud-scf": "0.0.0-alpha.5",
+    "@faasjs/trigger-http": "0.0.0-alpha.2"
   },
   "devDependencies": {
     "@babel/core": "*",
@@ -31,7 +32,10 @@
     "babel-jest": "*",
     "jest": "*",
     "jsdoc-babel": "*",
-    "jsdoc-to-markdown": "*"
+    "jsdoc-to-markdown": "*",
+    "rollup": "*",
+    "rollup-plugin-typescript2": "*",
+    "typescript": "*"
   },
   "babel": {
     "presets": [

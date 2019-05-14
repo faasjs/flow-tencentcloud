@@ -1,5 +1,5 @@
 import Flow from '@faasjs/flow';
-import * as TencentCloud from '@faasjs/provider-tencentcloud';
+import { action } from '@faasjs/provider-tencentcloud-scf';
 
 interface Stack {
   type: string;
@@ -11,7 +11,7 @@ class FlowTencentcloud extends Flow {
   public async remoteInvoke (index: number, data: any) {
     this.logger.debug('remoteInvoke #%i with %o', index, data);
 
-    return TencentCloud.Scf.action(this.logger, this.config.resource!.provider!.config, {
+    return action(this.logger, this.config.resource!.provider!.config, {
       Action: 'Invoke',
       ClientContext: JSON.stringify(data),
       FunctionName: `${this.config.name}_invoke_${index}`,
