@@ -14,7 +14,8 @@ class FlowTencentcloud extends Flow {
     return action(this.logger, this.config.resource!.provider!.config, {
       Action: 'Invoke',
       ClientContext: JSON.stringify(data),
-      FunctionName: `${this.config.name}_invoke_${index}`,
+      FunctionName: `${this.config.name!.replace(/\//g, '_')}_invoke_${index}`,
+      Namespace: process.env.FaasEnv,
       InvocationType: 'Event'
     });
   }
